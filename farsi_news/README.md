@@ -18,7 +18,7 @@ Each dataset is a `.json` file with the following structure:
 ]
 ```
 
-The records of the files are collected from the official RSS feeds, [Hamshahri RSS feed](https://www.hamshahrionline.ir/rss-help), and [Radiofarda RSS feed](https://www.radiofarda.com/rssfeeds).
+The records of the files are collected from the official RSS feeds of both websites at [Hamshahri RSS feed](https://www.hamshahrionline.ir/rss-help), and [Radiofarda RSS feed](https://www.radiofarda.com/rssfeeds).
 
 Number of records in `hamshahri.json` and `radiofarda.json` files are 2203 and 284, respectively.
 
