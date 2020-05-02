@@ -1,3 +1,10 @@
+##################################################
+# This is a simple RSS feed parser.
+##################################################
+# Author: Mehdi Allahyari
+# Email : mallahyari@georgiasouthern.edu
+##################################################
+
 import feedparser
 import time
 import json
