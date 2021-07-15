@@ -2,7 +2,7 @@
 # This is a simple RSS feed parser.
 ##################################################
 # Author: Mehdi Allahyari
-# Email : mallahyari@georgiasouthern.edu
+# Email : mehdi.allahyari@gmail.com
 ##################################################
 
 import feedparser
