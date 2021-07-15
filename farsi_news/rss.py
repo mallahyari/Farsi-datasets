@@ -50,8 +50,10 @@ def run():
             'https://www.hamshahrionline.ir/rss/tp/19', 'https://www.hamshahrionline.ir/rss/tp/20', 'https://www.hamshahrionline.ir/rss/tp/21',
             'https://www.hamshahrionline.ir/rss/tp/26', 'https://www.hamshahrionline.ir/rss/tp/38', 'https://www.hamshahrionline.ir/rss/tp/628']
     file_name = str(int(time.time())) + '.json'
-    file_path = os.path.join('/Users/mehdi/python_examples/rss', file_name)
-    print(file_path)
+    NEWS_PATH = os.path.join('datasets','news')   
+    os.makedirs(NEWS_PATH,exist_ok=True)
+    file_path = os.path.join('datasets/news',file_name)
+    print('hamshahri : ',file_path)
     hamshahriRssReader = rssFeedReader(urls, file_path)
     hamshahriRssReader.parse_urls()
 
@@ -59,10 +61,10 @@ def run():
             'https://www.radiofarda.com/api/zgok_e_gkv', 'https://www.radiofarda.com/api/zpoqie-kqp', 'https://www.radiofarda.com/api/zrqpmeuupm']
 
     file_name = str(int(time.time())) + '.json'
-    file_path = os.path.join('/Users/mehdi/python_examples/rss/radiofarda', file_name)
-    print(file_path)
-    hamshahriRssReader = rssFeedReader(urls, file_path)
-    hamshahriRssReader.parse_urls()
+    file_path = os.path.join('datasets/news', file_name)
+    print('radiofarda',file_path)
+    radiofardaRssReader = rssFeedReader(urls, file_path)
+    radiofardaRssReader.parse_urls()
 
 
 if __name__ == "__main__":
